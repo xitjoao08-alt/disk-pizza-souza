@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#171816">
+  <meta
+    name="description"
+    content="Disk Pizza Souza - Pizzas salgadas e doces em Roque Viola."
+  >
+
+  <title>Disk Pizza Souza | Pizza em Roque Viola</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="topbar">
+
+    <a href="#" class="brand">
+      <span class="brand-mark">🍕</span>
+
+      <span>
+        DISK PIZZA <b>SOUZA</b>
+        <small>Roque Viola · Sabor de verdade</small>
+      </span>
+    </a>
+
+    <a href="#cardapio" class="top-order">
+      Ver cardápio ↗
+    </a>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          PIZZA FEITA COM CAPRICHO
+        </p>
+
+        <h1>
+          Hoje combina<br>
+          com <em>pizza.</em>
+        </h1>
+
+        <p class="intro">
+          Sua fome merece uma pizza caprichada,
+          com muito sabor e aquela borda de
+          requeijão que faz diferença.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#cardapio" class="btn primary">
+            Escolher minha pizza →
+          </a>
+
+          <a
+            href="https://wa.me/5517997550016"
+            target="_blank"
+            class="phone"
+          >
+            ☎ (17) 99755-0016
+          </a>
+
+        </div>
+
+        <div class="hero-note">
+          ★ Todas as pizzas acompanham borda de requeijão
+        </div>
+
+      </div>
+
+
+      <div class="hero-art">
+
+        <div class="pizza-emoji">
+          🍕
+        </div>
+
+        <div class="floating f1">
+          MUITO<br>
+          RECHEIO
+        </div>
+
+        <div class="floating f2">
+          FEITA COM<br>
+          CARINHO ♡
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CARDÁPIO -->
+    <section class="menu-section" id="cardapio">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            ESCOLHA A SUA
+          </p>
+
+          <h2>
+            Nosso <em>cardápio</em>
+          </h2>
+
+          <p class="muted">
+            Pizzas grandes · 8 fatias · Valores em reais
+          </p>
+
+        </div>
+
+
+        <!-- BUSCA -->
+        <div class="search-wrap">
+
+          <span>⌕</span>
+
+          <input
+            id="search"
+            type="search"
+            placeholder="Buscar sabor..."
+            aria-label="Buscar sabor"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- FILTROS -->
+      <div class="filters" id="filters">
+
+        <button
+          class="filter active"
+          data-filter="todas"
+        >
+          Todas
+        </button>
+
+        <button
+          class="filter"
+          data-filter="salgada"
+        >
+          Salgadas
+        </button>
+
+        <button
+          class="filter"
+          data-filter="doce"
+        >
+          Doces
+        </button>
+
+        <button
+          class="filter"
+          data-filter="bebida"
+        >
+          Bebidas
+        </button>
+
+        <button
+          class="filter"
+          data-filter="borda"
+        >
+          Bordas
+        </button>
+
+      </div>
+
+
+      <!-- PRODUTOS -->
+      <div
+        id="menu"
+        class="menu-grid"
+      ></div>
+
+
+      <div class="menu-foot">
+        ✦ Todas as pizzas salgadas acompanham borda de requeijão.
+      </div>
+
+    </section>
+
+
+    <!-- CHAMADA PARA PEDIDO -->
+    <section class="order-banner">
+
+      <div>
+
+        <p class="eyebrow">
+          BATEU A FOME?
+        </p>
+
+        <h2>
+          Seu próximo pedaço<br>
+          está a uma mensagem.
+        </h2>
+
+        <p>
+          Faça seu pedido pelo WhatsApp.
+        </p>
+
+      </div>
+
+
+      <a
+        class="btn light"
+        href="https://wa.me/5517997550016?text=Ol%C3%A1%2C%20Disk%20Pizza%20Souza!%20Quero%20fazer%20um%20pedido."
+        target="_blank"
+      >
+        Pedir pelo WhatsApp ↗
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <div class="footer-brand">
+      🍕 <b>DISK PIZZA SOUZA</b>
+    </div>
+
+    <p>
+      Rua Guarani, 339 · Roque Viola
+    </p>
+
+    <p>
+      <a href="tel:+5517997550016">
+        (17) 99755-0016
+      </a>
+    </p>
+
+    <small>
+      © <span id="year"></span>
+      Disk Pizza Souza.
+      Feito com carinho.
+    </small>
+
+  </footer>
+
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5517997550016"
+    target="_blank"
+    aria-label="Pedir pelo WhatsApp"
+  >
+    ☏
+  </a>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
