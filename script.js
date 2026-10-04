@@ -3,33 +3,38 @@ const menuToggle = document.getElementById("menuToggle");
 const nav = document.getElementById("nav");
 
 menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("open");
+  const isOpen = nav.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Fechar menu" : "Abrir menu"
+  );
 });
 
 nav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menu");
   });
 });
 
-// Fade-in progressivo conforme a página aparece
+// Fade-in dos elementos ao entrar na tela
 const revealElements = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
-  const revealObserver = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries, currentObserver) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
+        currentObserver.unobserve(entry.target);
       }
     });
   }, {
     threshold: 0.12
   });
 
-  revealElements.forEach((element) => {
-    revealObserver.observe(element);
-  });
+  revealElements.forEach((element) => observer.observe(element));
 } else {
   revealElements.forEach((element) => {
     element.classList.add("visible");
