@@ -1,44 +1,259 @@
 
-<section class="about-section" id="sobre">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="about-image reveal">
-    <img
-      src="IMG_6947.jpeg"
-      alt="Fachada da Disk Pizza Souza em Jales"
-      loading="lazy"
-    >
-  </div>
+  <title>Disk Pizza Souza | Pizzaria em Jales</title>
+  <meta name="description" content="Conheça a Disk Pizza Souza em Jales-SP. Confira nosso cardápio e faça seu pedido pelo WhatsApp.">
 
-  <div class="about-content reveal">
-    <span class="eyebrow">SOBRE A PIZZARIA</span>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <h2>Disk Pizza Souza</h2>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Allura&display=swap" rel="stylesheet">
 
-    <p>
-      Uma pizzaria em Jales para quem aprecia uma boa pizza
-      e quer compartilhar bons momentos.
-    </p>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <p>
-      Consulte nosso cardápio e entre em contato para realizar seu pedido.
-    </p>
+<body>
 
-    <div class="about-features">
-      <div>
-        <span>✦</span>
-        <strong>Variedade de sabores</strong>
+<header class="header">
+  <a href="#inicio" class="brand">
+    <img src="IMG_6945.jpeg" alt="Disk Pizza Souza">
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="#inicio">Início</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <a class="header-cta" href="https://wa.me/5517997550016" target="_blank" rel="noopener">
+    <span class="wa-icon">◉</span>
+    Pedir pelo WhatsApp
+  </a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-shade"></div>
+
+    <div class="hero-content reveal">
+      <span class="eyebrow">PIZZARIA EM JALES - SP</span>
+
+      <h1>
+        Sabor, qualidade<br>
+        e aquele momento<br>
+        <em>especial!</em>
+      </h1>
+
+      <p>
+        Na Disk Pizza Souza, cada pizza é uma escolha para
+        compartilhar bons momentos com quem você gosta.
+      </p>
+
+      <a class="btn btn-red" href="https://wa.me/5517997550016?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Disk%20Pizza%20Souza." target="_blank" rel="noopener">
+        <span class="wa-icon">◉</span>
+        Fazer pedido pelo WhatsApp
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="hero-note">
+      <span>Pizza é sempre</span>
+      <span>uma boa ideia!</span>
+      <i></i>
+    </div>
+
+    <div class="info-strip">
+      <div class="info-item">
+        <span class="info-symbol">◷</span>
+        <div>
+          <small>Horário de atendimento</small>
+          <strong>17h30 às 23h30</strong>
+        </div>
       </div>
 
-      <div>
-        <span>♡</span>
-        <strong>Atendimento pelo WhatsApp</strong>
+      <div class="info-item">
+        <span class="info-symbol">⌖</span>
+        <div>
+          <small>Endereço</small>
+          <strong>R. Guarani, 339 – Conj. Hab. Roque Viola</strong>
+          <small>Jales – SP, CEP 15700-774</small>
+        </div>
       </div>
 
-      <div>
-        <span>⌖</span>
-        <strong>Em Jales - SP</strong>
+      <div class="info-item">
+        <span class="info-symbol">◉</span>
+        <div>
+          <small>Disk Pizza Souza</small>
+          <strong>(17) 99755-0016</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="menu-section" id="cardapio">
+    <div class="menu-pattern"></div>
+
+    <div class="menu-copy reveal">
+      <span class="eyebrow">NOSSO CARDÁPIO</span>
+
+      <h2>Pizzas Salgadas<br>e Doces</h2>
+
+      <p>
+        Confira nosso cardápio completo com os sabores disponíveis.
+        Encontre sua próxima pizza favorita!
+      </p>
+
+      <p class="menu-highlight">
+        Consulte as opções e os valores diretamente no cardápio.
+      </p>
+
+      <button class="btn btn-outline" id="openMenu">
+        <span>▤</span>
+        Ver cardápio completo
+      </button>
+    </div>
+
+    <button class="menu-photo reveal" id="openMenuImage" aria-label="Ampliar cardápio">
+      <img src="IMG_6946.jpeg" alt="Cardápio oficial da Disk Pizza Souza" loading="lazy">
+      <span class="zoom-button">⌕</span>
+    </button>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about-section" id="sobre">
+    <div class="about-photo reveal">
+      <img src="IMG_6947.jpeg" alt="Fachada da Disk Pizza Souza em Jales" loading="lazy">
+    </div>
+
+    <div class="about-copy reveal">
+      <span class="eyebrow">SOBRE NÓS</span>
+
+      <h2>Disk Pizza Souza</h2>
+
+      <p>
+        Uma pizzaria em Jales para quem aprecia uma boa pizza
+        e gosta de compartilhar bons momentos.
+      </p>
+
+      <p>
+        Nossa proposta é oferecer uma experiência prática:
+        confira as opções do cardápio e faça seu pedido pelo WhatsApp.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <span class="feature-icon">✳</span>
+          <p>Variedade<br>de sabores</p>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">♡</span>
+          <p>Atendimento<br>com carinho</p>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">⌖</span>
+          <p>Pizzaria em<br>Jales - SP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMADA FINAL -->
+  <section class="order-banner" id="contato">
+    <div class="order-pizza"></div>
+
+    <div class="order-copy reveal">
+      <span class="eyebrow">PEÇA AGORA</span>
+      <h2>Sua pizza favorita está<br>a um clique de distância!</h2>
+    </div>
+
+    <a class="btn btn-dark-outline" href="https://wa.me/5517997550016?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">
+      <span class="green-wa">◉</span>
+      Fazer pedido pelo WhatsApp
+      <span>→</span>
+    </a>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="location-section" id="localizacao">
+    <div class="location-copy reveal">
+      <span class="eyebrow">VENHA NOS ENCONTRAR</span>
+      <h2>Estamos em Jales.</h2>
+
+      <p>
+        R. Guarani, 339 – Conj. Hab. Roque Viola,
+        Jales – SP, CEP 15700-774.
+      </p>
+
+      <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&query=Rua+Guarani+339+Roque+Viola+Jales+SP+15700-774" target="_blank" rel="noopener">
+        Abrir no Google Maps →
+      </a>
+    </div>
+
+    <div class="map-box reveal">
+      <iframe
+        title="Localização da Disk Pizza Souza"
+        src="https://maps.google.com/maps?q=Rua%20Guarani%20339%20Roque%20Viola%20Jales%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-thanks">
+      <span>Obrigado</span>
+      <span>pela sua preferência!</span>
+      <i></i>
+    </div>
+
+    <div class="footer-center">
+      <img src="IMG_6945.jpeg" alt="Disk Pizza Souza">
+      <p>R. Guarani, 339 – Conj. Hab. Roque Viola, Jales – SP</p>
+      <p>(17) 99755-0016</p>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
       </div>
     </div>
   </div>
 
-</section>
+  <div class="footer-bottom">
+    © 2026 Disk Pizza Souza. Todos os direitos reservados.
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5517997550016" target="_blank" rel="noopener" aria-label="Falar com a Disk Pizza Souza pelo WhatsApp">
+  ◉
+</a>
+
+<!-- MODAL CARDÁPIO -->
+<div class="modal" id="menuModal" aria-hidden="true">
+  <button class="modal-close" id="closeMenu" aria-label="Fechar cardápio">×</button>
+  <img src="IMG_6946.jpeg" alt="Cardápio ampliado da Disk Pizza Souza">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
