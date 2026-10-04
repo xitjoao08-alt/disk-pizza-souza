@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root {
+  --ink: #1b1b19;
+  --cream: #faf7f0;
+  --red: #c83d32;
+  --green: #247a42;
+  --muted: #77766f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* CABEÇALHO */
+
+.topbar {
+  height: 78px;
+  padding: 0 max(5vw, 22px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #171816;
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.brand-mark {
+  font-size: 30px;
+}
+
+.brand b {
+  color: #72c75a;
+}
+
+.brand small {
+  display: block;
+  font-size: 10px;
+  color: #b8b8b0;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 3px;
+}
+
+.top-order {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #555;
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 490px;
+  background: #191a17;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 65px max(8vw, 24px);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-copy {
+  max-width: 550px;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: .22em;
+  font-weight: 800;
+  color: #db8b48;
+}
+
+.hero h1,
+.section-head h2,
+.order-banner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 1.02;
+  margin: 15px 0;
+}
+
+.hero h1 em,
+.section-head h2 em {
+  font-style: normal;
+  color: #75c65c;
+}
+
+.intro {
+  max-width: 430px;
+  color: #c5c5bd;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 15px 20px;
+  border-radius: 7px;
+}
+
+.primary {
+  background: #d94a37;
+  color: white;
+}
+
+.phone {
+  color: #eee;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hero-note {
+  margin-top: 26px;
+  color: #b9b9ae;
+  font-size: 11px;
+}
+
+/* ILUSTRAÇÃO */
+
+.hero-art {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(38vw, 420px);
+  height: min(38vw, 420px);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #383b2c,
+    #22241e 65%,
+    transparent 66%
+  );
+  display: grid;
+  place-items: center;
+}
+
+.pizza-emoji {
+  font-size: clamp(170px, 25vw, 310px);
+  filter: drop-shadow(0 20px 18px #0008);
+  transform: rotate(-13deg);
+}
+
+.floating {
+  position: absolute;
+  background: #f5e9ce;
+  color: #26251e;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  transform: rotate(-8deg);
+  box-shadow: 0 8px 20px #0004;
+}
+
+.f1 {
+  top: 12%;
+  right: 0;
+}
+
+.f2 {
+  bottom: 10%;
+  left: 0;
+  transform: rotate(7deg);
+}
+
+/* CARDÁPIO */
+
+.menu-section {
+  padding: 78px max(7vw, 22px) 85px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.section-head h2 {
+  font-size: 48px;
+  margin: 8px 0;
+}
+
+.muted {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.search-wrap {
+  border: 1px solid #dedbd2;
+  background: white;
+  border-radius: 7px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 220px;
+  height: 42px;
+  color: #777;
+}
+
+.search-wrap input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font: inherit;
+  font-size: 12px;
+  background: transparent;
+}
+
+/* FILTROS */
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.filter {
+  border: 1px solid #dedbd2;
+  background: transparent;
+  color: #555;
+  border-radius: 30px;
+  padding: 9px 16px;
+  font: 600 11px 'DM Sans';
+  cursor: pointer;
+}
+
+.filter.active,
+.filter:hover {
+  background: #20211d;
+  color: white;
+  border-color: #20211d;
+}
+
+/* PRODUTOS */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
+.menu-card {
+  background: white;
+  border: 1px solid #eeeae1;
+  border-radius: 9px;
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  min-height: 140px;
+  transition: .2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px #2823160d;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .025em;
+}
+
+.price {
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.desc {
+  font-size: 11px;
+  color: #77766f;
+  line-height: 1.5;
+  margin: 9px 0 15px;
+}
+
+.add {
+  margin-top: auto;
+  border: 0;
+  background: #f6f3ec;
+  color: #34342e;
+  border-radius: 5px;
+  padding: 9px 10px;
+  text-align: left;
+  font: 700 10px 'DM Sans';
+  cursor: pointer;
+}
+
+.add:hover {
+  background: #e8f2e4;
+  color: var(--green);
+}
+
+.menu-foot {
+  margin-top: 24px;
+  font-size: 11px;
+  color: #68685f;
+}
+
+/* PEDIDOS */
+
+.order-banner {
+  margin: 0 5vw 70px;
+  background: #287443;
+  color: white;
+  border-radius: 12px;
+  padding: 38px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.order-banner .eyebrow {
+  color: #d8e9b9;
+}
+
+.order-banner h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 8px 0;
+}
+
+.order-banner p:not(.eyebrow) {
+  font-size: 12px;
+  color: #d8e6d8;
+}
+
+.light {
+  background: #fff;
+  color: #23663a;
+  white-space: nowrap;
+}
+
+/* RODAPÉ */
+
+footer {
+  text-align: center;
+  background: #171816;
+  color: #fff;
+  padding: 34px 20px 28px;
+  font-size: 12px;
+}
+
+footer p {
+  color: #c0c0b7;
+  margin: 8px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer small {
+  display: block;
+  color: #85867d;
+  font-size: 10px;
+  margin-top: 22px;
+}
+
+.footer-brand {
+  font-size: 14px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  box-shadow: 0 5px 20px #0003;
+  z-index: 5;
+}
+
+/* TABLETS */
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: 550px;
+    align-items: flex-start;
+    padding-top: 58px;
+  }
+
+  .hero-art {
+    width: 280px;
+    height: 280px;
+    right: -45px;
+    top: auto;
+    bottom: -50px;
+    transform: none;
+    opacity: .75;
+  }
+
+  .pizza-emoji {
+    font-size: 210px;
+  }
+
+  .hero-copy {
+    max-width: 520px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search-wrap {
+    width: 100%;
+  }
+
+  .order-banner {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+
+/* CELULARES */
+
+@media (max-width: 520px) {
+
+  .topbar {
+    height: 68px;
+  }
+
+  .brand {
+    font-size: 11px;
+  }
+
+  .brand small {
+    font-size: 9px;
+  }
+
+  .top-order {
+    font-size: 11px;
+    padding: 9px 12px;
+  }
+
+  .hero {
+    min-height: 560px;
+    padding: 48px 23px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+  }
+
+  .hero-art {
+    right: -65px;
+    bottom: -28px;
+  }
+
+  .hero-note {
+    max-width: 240px;
+  }
+
+  .menu-section {
+    padding: 58px 17px;
+  }
+
+  .section-head h2 {
+    font-size: 42px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .menu-card {
+    min-height: 120px;
+    padding: 16px;
+  }
+
+  .order-banner {
+    display: block;
+    padding: 28px 24px;
+  }
+
+  .order-banner .btn {
+    margin-top: 16px;
+  }
+
+  .whatsapp-float {
+    width: 48px;
+    height: 48px;
+  }
+}
